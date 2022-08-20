@@ -10,7 +10,8 @@ main {
    flex-direction: column;
    align-items: center;
    justify-content: center;
-
+   background-color:wheat;
+   border-radius: 3%;
 }
 
 button {
@@ -19,7 +20,8 @@ button {
 }
 
 p {
-    background-color: wheat;
+    padding: 10px 20px;
+
     font-size: larger;
     flex-wrap: wrap;
     max-width: 100%;
