@@ -24,13 +24,12 @@ function getComputerChoice () {
         default:
             computerSelection = 'Scissors';
             compText = 'Computer chose Scissors!';
-    }    return computerSelection;
-
+    }    
 
     document.getElementById("demoComp").innerHTML = compText;
 }
 
-getComputerChoice();
+
 
 
 function getUserChoice() {
