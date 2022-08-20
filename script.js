@@ -36,7 +36,7 @@ function getUserChoice() {
 
 
     let text;
-    let userSelection = prompt('Enter rock, paper or scissors!', 'Enter rock, paper or scissors');
+    let userSelection = prompt('Enter rock, paper or scissors!', 'rock, paper or scissors');
 
     userSelection = userSelection.toLowerCase();
 
@@ -86,11 +86,16 @@ function playGame(userSelection, computerSelection) {
     if (userSelection === scissors && computerSelection === rock){
         result = 'Rock beats scissors! You lose!';
     }
-    
-    }
 
     document.getElementById("result").innerHTML = result;
 
-
+}
 }
 
+function game(){
+    for (let i = 0; i < 5; i++) {
+        getComputerChoice();
+        getUserChoice();
+        playGame(userSelection, computerSelection)
+     }
+}

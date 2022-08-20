@@ -1,28 +1,28 @@
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 main {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   background-color:wheat;
-   border-radius: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: wheat;
+  border-radius: 3%;
 }
 
 button {
-    padding: 10px 20px;
-    box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  padding: 10px 20px;
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.2);
 }
 
 p {
-    padding: 10px 20px;
+  padding: 10px 20px;
 
-    font-size: larger;
-    flex-wrap: wrap;
-    max-width: 100%;
+  font-size: larger;
+  flex-wrap: wrap;
+  max-width: 100%;
 }
