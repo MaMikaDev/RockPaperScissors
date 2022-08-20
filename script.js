@@ -63,5 +63,34 @@ function getUserChoice() {
 
 console.log('User choice is' + getUserChoice());
 
+function playGame(userSelection, computerSelection) {
 
+    if (userSelection === computerSelection) {
+        result = 'Nobody Wins! It is a draw!';
+    }
+    if (userSelection === rock && computerSelection === paper){
+        result = 'Paper beats Rock! You lose!';
+    }
+    if (userSelection === paper && computerSelection === rock){
+        result = 'Paper beats Rock! You win!';
+
+    if (userSelection === rock && computerSelection === scissors){
+        result = 'Rock beats Scissors! You win!';
+    }
+    if (userSelection === paper && computerSelection === rock){
+        result = 'Paper beats rock! You win!';
+    }
+    if (userSelection === scissors && computerSelection === paper){
+        result = 'Scissors beat Paper! You win!';
+    }
+    if (userSelection === scissors && computerSelection === rock){
+        result = 'Rock beats scissors! You lose!';
+    }
+    
+    }
+
+    document.getElementById("result").innerHTML = result;
+
+
+}
 
