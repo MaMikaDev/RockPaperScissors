@@ -14,19 +14,20 @@ function getComputerChoice () {
         
 
         case 0:
-            computerSelection = 'Rock';
+            computerSelection = 'rock';
             compText = 'Computer chose Rock!';
             break;
         case 1:
-            computerSelection = 'Paper';
+            computerSelection = 'paper';
             compText = 'Computer chose Paper!';
             break;
         default:
-            computerSelection = 'Scissors';
+            computerSelection = 'scissors';
             compText = 'Computer chose Scissors!';
     }    
 
     document.getElementById("demoComp").innerHTML = compText;
+    return computerSelection;
 }
 
 
@@ -36,66 +37,81 @@ function getUserChoice() {
 
 
     let text;
-    let userSelection = prompt('Enter rock, paper or scissors!', 'rock, paper or scissors');
+    let answer = prompt('Enter rock, paper or scissors!', 'rock, paper or scissors');
 
-    userSelection = userSelection.toLowerCase();
+    let entry = answer.toLowerCase();
 
-
-    switch(userSelection){
+    switch(entry){
 
         case 'rock':
             text = 'You chose Rock!';
+            userSelection = 'rock';
             break;
         case 'paper':
             text = 'You chose Paper';
+            userSelection = 'paper'
             break;
         case 'scissors':
             text = 'You chose Scissors!';
+            userSelection = 'scissors';
             break;
         default:
             text= 'This is not a valid entry!';
+            userSelection = 'null';
     }
 
     document.getElementById("demo").innerHTML = text;
-
     return userSelection;
 }
-
-console.log('User choice is' + getUserChoice());
 
 function playGame(userSelection, computerSelection) {
 
     if (userSelection === computerSelection) {
         result = 'Nobody Wins! It is a draw!';
     }
-    if (userSelection === rock && computerSelection === paper){
-        result = 'Paper beats Rock! You lose!';
+    if (userSelection === 'rock'){
+        if (computerSelection === 'paper'){
+            result = 'Paper beats Rock! You lose!';
+        }
+        else if (computerSelection === 'scissors'){
+            result = 'Rock beats Scissors! You win!';
+        }
     }
-    if (userSelection === paper && computerSelection === rock){
-        result = 'Paper beats Rock! You win!';
 
-    if (userSelection === rock && computerSelection === scissors){
-        result = 'Rock beats Scissors! You win!';
-    }
-    if (userSelection === paper && computerSelection === rock){
+    if (userSelection === 'paper'){
+         if (computerSelection === 'rock'){
         result = 'Paper beats rock! You win!';
     }
-    if (userSelection === scissors && computerSelection === paper){
+        else if (computerSelection === 'scissors'){
+            result = 'Scissors beat Paper! You lose!';
+    }
+    }
+
+    if (userSelection === 'scissors'){
+
+        if (computerSelection === 'paper'){
         result = 'Scissors beat Paper! You win!';
-    }
-    if (userSelection === scissors && computerSelection === rock){
-        result = 'Rock beats scissors! You lose!';
-    }
+        }
+        else if (computerSelection === 'rock'){
+        result = 'Rock beats Scissors! You lose!';
+        }
 
-    document.getElementById("result").innerHTML = result;
-
+    if (userSelection === 'null'){
+        if (computerSelection === 'rock' || computerSelection === 'paper' || computerSelection === 'scissors')
+        result = 'This is not a valid entry. Please try again.'
+    
+    }
+    return result;
 }
+
+
 }
 
 function game(){
     for (let i = 0; i < 5; i++) {
-        getComputerChoice();
-        getUserChoice();
+        getUserChoice(); getComputerChoice (); 
         playGame(userSelection, computerSelection)
+        document.getElementById("result").innerHTML = result;
+        console.log(userSelection, computerSelection, result);
      }
 }
