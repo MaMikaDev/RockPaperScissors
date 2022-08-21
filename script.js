@@ -97,9 +97,9 @@ function playGame(userSelection, computerSelection) {
         }
 
     if (userSelection === 'null'){
-        if (computerSelection === 'rock' || computerSelection === 'paper' || computerSelection === 'scissors')
+        if (computerSelection === 'rock' || computerSelection === 'paper' || computerSelection === 'scissors'){
         result = 'This is not a valid entry. Please try again.'
-    
+        }
     }
     return result;
 }
