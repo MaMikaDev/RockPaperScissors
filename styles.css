@@ -1,10 +1,16 @@
 body {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Roboto", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+h1 {
+  font-size: 4em;
+  padding: 1em;
+  color: #f0f018;
+}
 main {
   color: #ffffff;
   display: flex;
@@ -13,16 +19,16 @@ main {
   justify-content: center;
   background-color: #8549ba;
   border-radius: 3%;
+  box-shadow: 2px 4px 16px #20074233;
 }
 
 button {
   padding: 10px 20px;
-  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 4px 16px #00000033;
 }
 
 p {
-  padding: 10px 20px;
-
+  padding: 10px 13px;
   font-size: larger;
   flex-wrap: wrap;
   max-width: 100%;
