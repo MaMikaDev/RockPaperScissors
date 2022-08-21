@@ -57,7 +57,7 @@ function getUserChoice() {
             break;
         default:
             text= 'This is not a valid entry!';
-            userSelection = 'null';
+            userSelection = 'not a game parameter';
     }
 
     document.getElementById("demo").innerHTML = text;
@@ -95,17 +95,18 @@ function playGame(userSelection, computerSelection) {
         else if (computerSelection === 'rock'){
         result = 'Rock beats Scissors! You lose!';
         }
-
-    if (userSelection === 'null'){
-        if (computerSelection === 'rock' || computerSelection === 'paper' || computerSelection === 'scissors'){
-        result = 'This is not a valid entry. Please try again.'
-        }
     }
+
+    if (userSelection === 'not a game parameter'){
+    
+        result = 'This is not a valid entry. Please try again.'
+    }
+
     return result;
-}
+    }
 
 
-}
+
 
 function game(){
     for (let i = 0; i < 5; i++) {
