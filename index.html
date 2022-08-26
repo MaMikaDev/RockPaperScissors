@@ -10,19 +10,24 @@
   </head>
   <body>
     <main>
+    <div class="header">
       <h1>Let's Play!</h1>
 
       <p>Choose your hand below:</p>
-
-      <!-- <button onclick="game();">Click Me!</button> -->
-
+    </div>
+    <div class="buttons">
       <button onclick="getUserChoice('rock'); game();">Rock!</button>
       <button onclick="getUserChoice('paper'); game();">Paper!</button>
       <button onclick="getUserChoice('scissors'); game();">Scissors</button>
+    </div>
 
+    <div class="textBox">
       <p id="demoComp"></p>
       <p id="demo"></p>
       <p id="result"></p>
+    </div>
+
+    <div class="counter"></div>
     </main>
   </body>
 </html>
