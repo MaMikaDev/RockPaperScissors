@@ -12,9 +12,13 @@
     <main>
       <h1>Let's Play!</h1>
 
-      <p>Click the Button below:</p>
+      <p>Choose your hand below:</p>
 
-      <button onclick="game();">Click Me!</button>
+      <!-- <button onclick="game();">Click Me!</button> -->
+
+      <button onclick="getUserChoice('rock'); game();">Rock!</button>
+      <button onclick="getUserChoice('paper'); game();">Paper!</button>
+      <button onclick="getUserChoice('scissors'); game();">Scissors</button>
 
       <p id="demoComp"></p>
       <p id="demo"></p>

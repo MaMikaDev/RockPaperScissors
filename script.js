@@ -33,13 +33,13 @@ function getComputerChoice () {
 
 
 
-function getUserChoice() {
+function getUserChoice(entry) {
 
 
     let text;
-    let answer = prompt('Enter rock, paper or scissors!', 'rock, paper or scissors');
+    // let answer = prompt('Enter rock, paper or scissors!', 'rock, paper or scissors');
 
-    let entry = answer.toLowerCase();
+    // let entry;
 
     switch(entry){
 
@@ -97,10 +97,10 @@ function playGame(userSelection, computerSelection) {
         }
     }
 
-    if (userSelection === 'not a game parameter'){
+    // if (userSelection === 'not a game parameter'){
     
-        result = 'This is not a valid entry. Please try again.'
-    }
+    //     result = 'This is not a valid entry. Please try again.'
+    // }
 
     return result;
     }
@@ -109,10 +109,11 @@ function playGame(userSelection, computerSelection) {
 
 
 function game(){
-    for (let i = 0; i < 5; i++) {
-        getUserChoice(); getComputerChoice (); 
+    // for (let i = 0; i < 5; i++) {
+        // getUserChoice();
+         getComputerChoice (); 
         playGame(userSelection, computerSelection)
         document.getElementById("result").innerHTML = result;
         console.log(userSelection, computerSelection, result);
-     }
+    //  }
 }
