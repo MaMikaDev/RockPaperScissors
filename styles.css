@@ -69,6 +69,11 @@ p {
 .counter {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   min-width: 90%;
   background-color: #ebb248;
+  margin: 2rem;
+  border-radius: 5%;
 }

@@ -8,6 +8,9 @@ let computerScore = 0;
 let textUserScore;
 let textComputerScore;
 
+let gamesPlayed = 5;
+
+
 
 
 function getComputerChoice() {
@@ -32,12 +35,10 @@ function getComputerChoice() {
 }
 
 function getUserChoice(entry) {
-  let text;
-  // let answer = prompt('Enter rock, paper or scissors!', 'rock, paper or scissors');
 
-  // let entry;
-
-  switch (entry) {
+    let text;
+  
+    switch (entry) {
     case "rock":
       text = "You chose Rock!";
       userSelection = "rock";
@@ -100,37 +101,49 @@ function playGame(userSelection, computerSelection) {
 
 function game() {
 
+
   getComputerChoice();
   playGame(userSelection, computerSelection);
   console.log(userSelection, computerSelection, winner);
-
+  
   score(); // displays current number score of the game 
+
+  if(userScore === 5 || computerScore === 5){
+    if (userScore === 5){
+
+        document.getElementById('final').innerHTML = 'You win this game! Congratulations!';
+
+    }
+    else {
+
+        document.getElementById('final').innerHTML = 'You lost the gamw! Better luck next time!';
+    }
+
+
+
+  }
 
 }
 
  function score() {//rough draft of what the function should be doing
 
-    // for (let i = 0; i < 5; i++){
-        if (winner === 'user') {
+    if (winner === 'user') {
             userScore++;
             textUserScore = ('User: ' + userScore);
             console.log(textUserScore);
+            document.getElementById('userScore').innerHTML = textUserScore;
         }
         if (winner === 'computer'){
             computerScore++;
             textComputerScore = ('Computer: ' + computerScore);
             console.log(textComputerScore);
-        }
-   
-    
-    if (userScore > computerScore){
-    
-        return 'You win! Congratulations!';
-    
+            document.getElementById('computerScore').innerHTML = textComputerScore;
+        }    
     }
+ 
 
-    else { 
+
         
-        return 'You lose this time! Sorry.';
- }
-}
+    
+    
+
