@@ -108,18 +108,19 @@ function game() {
   
   score(); // displays current number score of the game 
 
+
+
   if(userScore === 5 || computerScore === 5){
-    if (userScore === 5){
+  if (userScore === 5){
 
         document.getElementById('final').innerHTML = 'You win this game! Congratulations!';
 
     }
     else {
 
-        document.getElementById('final').innerHTML = 'You lost the gamw! Better luck next time!';
+        document.getElementById('final').innerHTML = 'You lost the game! Better luck next time!';
     }
-
-
+gameFinished();
 
   }
 
@@ -141,6 +142,16 @@ function game() {
         }    
     }
  
+function gameFinished(){   //not very elegant, but simple whipeout of the scores
+
+    
+    userScore = 0;
+    computerScore = 0;
+  
+
+}
+    
+
 
 
         
