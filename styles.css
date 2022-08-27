@@ -5,7 +5,7 @@
 
 body {
   font-family: 'Silkscreen', cursive;
-  height: 95vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -117,4 +117,12 @@ p {
   justify-content: center;
 
 
+}
+
+@media screen and (max-width: 1023px) {
+
+  body {
+    height: 100%;
+  }
+  
 }
