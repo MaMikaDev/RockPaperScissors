@@ -76,6 +76,7 @@ justify-content: center;
 
 
 }
+
 button {
   font-family: 'Silkscreen', cursive;
   font-size: large;
@@ -89,6 +90,7 @@ p {
   font-size: larger;
   flex-wrap: wrap;
   max-width: 100%;
+  justify-self: center;
 }
 
 .counter {
