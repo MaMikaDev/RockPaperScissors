@@ -8,7 +8,7 @@ body {
 }
 
 button {
-  font-size: medium;
+  margin: 2px;
 }
 
 @media screen and (min-width: 1024px ){
@@ -76,7 +76,7 @@ h1 {
   color: #000000;
   border-radius: 2%;
   align-items: center;
-  justify-content: justify;
+  justify-content: center;
   box-shadow: 3px 6px 12px #372a3a;
 }
 
@@ -108,7 +108,7 @@ p {
   font-size: larger;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction:column;
   align-items: space-around;
   justify-content: center;
   width: 100%;
@@ -117,6 +117,17 @@ p {
   border-radius: 5%;
   box-shadow: 3px 6px 12px #372a3a;
 }
+
+#scores, 
+#roundScores {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: space-around;
+  justify-content: center;
+
+}
+
+
 
 #footer {
 
