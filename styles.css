@@ -51,6 +51,7 @@ main {
   border-radius: 2%;
   align-items: center;
   justify-content: center;
+  box-shadow: 3px 6px 12px #372a3a;
 }
 
 button {
@@ -67,13 +68,15 @@ p {
 }
 
 .counter {
+  font-size: larger;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  align-items: center;
+  align-items: space-around;
   justify-content: center;
   min-width: 90%;
   background-color: #ebb248;
   margin: 2rem;
   border-radius: 5%;
+  box-shadow: 3px 6px 12px #372a3a;
 }

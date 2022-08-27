@@ -63,35 +63,35 @@ function getUserChoice(entry) {
 function playGame(userSelection, computerSelection) {
 
     if (userSelection === computerSelection) {
-    textResult = "Nobody Wins! It is a draw!";
+    textResult = "This round is a draw!";
     winner = "nobody";
   }
   if (userSelection === "rock") {
     if (computerSelection === "paper") {
-      textResult = "Paper beats Rock! You lose!";
+      textResult = "Paper beats Rock! Round lost!";
       winner = "computer";
     } else if (computerSelection === "scissors") {
-      textResult = "Rock beats Scissors! You win!";
+      textResult = "Rock beats Scissors! Round won!";
       winner = "user";
     }
   }
 
   if (userSelection === "paper") {
     if (computerSelection === "rock") {
-      textResult = "Paper beats rock! You win!";
+      textResult = "Paper beats Rock! Round won!";
       winner = "user";
     } else if (computerSelection === "scissors") {
-      textResult = "Scissors beat Paper! You lose!";
+      textResult = "Scissors beat Paper! Round lost!";
       winner = "computer";
     }
   }
 
   if (userSelection === "scissors") {
     if (computerSelection === "paper") {
-      textResult = "Scissors beat Paper! You win!";
+      textResult = "Scissors beat Paper! Round won!";
       winner = "user";
     } else if (computerSelection === "rock") {
-      textResult = "Rock beats Scissors! You lose!";
+      textResult = "Rock beats Scissors! Round lost!";
       winner = "computer";
     }
   }
@@ -128,7 +128,7 @@ function game() {
 
 }
 
- function score() {//rough draft of what the function should be doing
+ function score() {//function adding up the scores
 
     if (winner === 'user') {
             userScore++;
@@ -144,7 +144,7 @@ function game() {
         }    
     }
  
-function gameFinished(){   //not very elegant, but simple end of the game
+function gameFinished(){   //disabling buttons when the game is finished
 
     
   document.getElementById("btn1").disabled = true;
