@@ -54,6 +54,15 @@ main {
   box-shadow: 3px 6px 12px #372a3a;
 }
 
+
+#restart {
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+
+}
 button {
 margin: 5px;
   padding: 10px 20px;
@@ -80,3 +89,4 @@ p {
   border-radius: 5%;
   box-shadow: 3px 6px 12px #372a3a;
 }
+

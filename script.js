@@ -20,6 +20,8 @@ restBtn.onclick = function () {
 
   userScore = 0;
   computerScore = 0;
+  document.getElementById('userScore').innerHTML = 'User: 0';
+  document.getElementById('computerScore').innerHTML = 'Computer: 0';
   document.getElementById('final').innerHTML = '';
   document.getElementById("demoComp").innerHTML = '';
   document.getElementById("demo").innerHTML = '';
