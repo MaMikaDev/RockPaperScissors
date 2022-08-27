@@ -89,7 +89,6 @@ p {
   padding: 10px 13px;
   font-size: larger;
   flex-wrap: wrap;
-  max-width: 100%;
 
 }
 
@@ -111,6 +110,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  align-content: center;
   justify-content: center;
 
 }
