@@ -90,13 +90,12 @@ p {
   font-size: larger;
   flex-wrap: wrap;
   max-width: 100%;
-  justify-self: center;
+
 }
 
 .counter {
   font-size: larger;
   display: flex;
-  flex-wrap: wrap;
   flex-direction:column;
   align-items: space-around;
   justify-content: center;
