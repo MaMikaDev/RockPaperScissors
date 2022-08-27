@@ -111,16 +111,18 @@ function game() {
 
 
   if(userScore === 5 || computerScore === 5){
-  if (userScore === 5){
+      if (userScore === 5){
 
         document.getElementById('final').innerHTML = 'You win this game! Congratulations!';
+        gameFinished();
 
     }
-    else {
+       else {
 
         document.getElementById('final').innerHTML = 'You lost the game! Better luck next time!';
-    }
-gameFinished();
+        gameFinished();
+      }
+
 
   }
 
@@ -142,11 +144,13 @@ gameFinished();
         }    
     }
  
-function gameFinished(){   //not very elegant, but simple whipeout of the scores
+function gameFinished(){   //not very elegant, but simple end of the game
 
     
-    userScore = 0;
-    computerScore = 0;
+  document.getElementById("btn1").disabled = true;
+  document.getElementById("btn2").disabled = true;
+  document.getElementById("btn3").disabled = true;
+  
   
 
 }
