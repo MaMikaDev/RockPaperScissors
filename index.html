@@ -9,33 +9,39 @@
     <title>Rock Paper Scissors Game!</title>
   </head>
   <body>
+
     <main>
-    <div class="header">
-      <h1>Let's Play!</h1>
+      <div class="header">
+        <h1>Let's Play!</h1>
+        <p>Choose your hand below:</p>
+      </div>
 
-      <p>Choose your hand below:</p>
-    </div>
-    <div class="buttons">
-      <button id="btn1" onclick="getUserChoice('rock'); game();">Rock!</button>
-      <button id="btn2" onclick="getUserChoice('paper'); game();">Paper!</button>
-      <button id="btn3" onclick="getUserChoice('scissors'); game();">Scissors</button>
-    </div>
 
-    <div class="textBox">
-      <p id="demo"></p>
-      <p id="demoComp"></p>
-      <p id="result"></p>
+      <div class="buttons">
+        <button id="btn1" onclick="getUserChoice('rock'); game();">Rock!</button>
+        <button id="btn2" onclick="getUserChoice('paper'); game();">Paper!</button>
+        <button id="btn3" onclick="getUserChoice('scissors'); game();">Scissors</button>
+      </div>
+
+      <div class="textBox">
+        <p id="demo"></p>
+        <p id="demoComp"></p>
+        <p id="result"></p>
+        <div id="restart"></div>
+      </div>
+
       <div id="restart"></div>
-    </div>
 
-    <div id="restart"></div>
+      <div class="counter">
+        <p id="userScore">User: 0</p>
+        <p id="computerScore">Computer: 0</p>
+        <p id="final"></p>
 
-    <div class="counter">
-      <p id="userScore">User: 0</p>
-      <p id="computerScore">Computer: 0</p>
-      <p id="final"></p>
-
-    </div>
+      </div>
+    
     </main>
+      
+    <footer id="footer">2022 &copy; Martyna 'The Other MK' Kowalczyk</footer>
+  
   </body>
 </html>
