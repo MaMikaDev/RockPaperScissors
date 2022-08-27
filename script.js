@@ -100,30 +100,30 @@ function playGame(userSelection, computerSelection) {
   }
   if (userSelection === "rock") {
     if (computerSelection === "paper") {
-      textResult = "Paper beats Rock! Round lost!";
+      textResult = "Paper beats Rock! \nRound lost!";
       winner = "computer";
     } else if (computerSelection === "scissors") {
-      textResult = "Rock beats Scissors! Round won!";
+      textResult = "Rock beats Scissors! \nRound won!";
       winner = "user";
     }
   }
 
   if (userSelection === "paper") {
     if (computerSelection === "rock") {
-      textResult = "Paper beats Rock! Round won!";
+      textResult = "Paper beats Rock! \nRound won!";
       winner = "user";
     } else if (computerSelection === "scissors") {
-      textResult = "Scissors beat Paper! Round lost!";
+      textResult = "Scissors beat Paper! \nRound lost!";
       winner = "computer";
     }
   }
 
   if (userSelection === "scissors") {
     if (computerSelection === "paper") {
-      textResult = "Scissors beat Paper! Round won!";
+      textResult = "Scissors beat Paper! \nRound won!";
       winner = "user";
     } else if (computerSelection === "rock") {
-      textResult = "Rock beats Scissors! Round lost!";
+      textResult = "Rock beats Scissors! \nRound lost!";
       winner = "computer";
     }
   }
