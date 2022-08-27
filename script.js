@@ -11,6 +11,34 @@ let textComputerScore;
 let gamesPlayed = 5;
 
 
+function restartGame() {
+const restart = document.querySelector('#restart');
+const restBtn = document.createElement("button");
+restBtn.innerHTML = "Restart?";
+
+restBtn.onclick = function () {
+
+  userScore = 0;
+  computerScore = 0;
+  document.getElementById('final').innerHTML = '';
+  document.getElementById("demoComp").innerHTML = '';
+  document.getElementById("demo").innerHTML = '';
+  document.getElementById("result").innerHTML = '';
+
+  document.getElementById("btn1").disabled = false;
+  document.getElementById("btn2").disabled = false;
+  document.getElementById("btn3").disabled = false;
+  
+  restBtn.style.visibility = "hidden";
+
+
+  alert("Game will restart now!");
+};
+
+restart.classList.add('restart');
+restart.appendChild(restBtn);
+}
+
 
 
 function getComputerChoice() {
@@ -115,12 +143,16 @@ function game() {
 
         document.getElementById('final').innerHTML = 'You win this game! Congratulations!';
         gameFinished();
+        restartGame();
+
 
     }
        else {
 
         document.getElementById('final').innerHTML = 'You lost the game! Better luck next time!';
         gameFinished();
+        restartGame();
+
       }
 
 
@@ -155,6 +187,7 @@ function gameFinished(){   //disabling buttons when the game is finished
 
 }
     
+
 
 
 
