@@ -11,10 +11,12 @@ let textComputerScore;
 let gamesPlayed = 5;
 
 
-function restartGame() {
 const restart = document.querySelector('#restart');
 const restBtn = document.createElement("button");
-restBtn.innerHTML = "Restart?";
+restBtn.innerHTML = "replay?";
+restBtn.style.visibility = "hidden";
+
+function restartGame() {
 
 restBtn.onclick = function () {
 
@@ -145,6 +147,7 @@ function game() {
 
         document.getElementById('final').innerHTML = 'You win this game! Congratulations!';
         gameFinished();
+        restBtn.style.visibility = 'visible';
         restartGame();
 
 
@@ -153,6 +156,7 @@ function game() {
 
         document.getElementById('final').innerHTML = 'You lost the game! Better luck next time!';
         gameFinished();
+        restBtn.style.visibility = 'visible';
         restartGame();
 
       }
