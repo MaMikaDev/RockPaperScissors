@@ -1,11 +1,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
 
+body {
 
+  height: 90vh;
+
+}
+
+@media screen and (min-width: 1024px ){
+  
+}
 
 body {
   font-family: 'Silkscreen', cursive;
-  /* height: 90vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
