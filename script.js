@@ -145,7 +145,7 @@ function game() {
   if(userScore === 5 || computerScore === 5){
       if (userScore === 5){
 
-        document.getElementById('final').innerHTML = 'You win this game! Congratulations!';
+        document.getElementById('final').innerHTML = 'You win! Congrats!';
         gameFinished();
         restBtn.style.visibility = 'visible';
         restartGame();
@@ -154,8 +154,7 @@ function game() {
     }
        else {
 
-        document.getElementById('final').innerHTML = 'You lost the game! Better luck next time!';
-        gameFinished();
+        document.getElementById('final').innerHTML = 'You lost the game!';
         restBtn.style.visibility = 'visible';
         restartGame();
 
