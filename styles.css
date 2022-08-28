@@ -52,13 +52,15 @@ main {
   margin: 0;
 }
 
-#styleB {
+/* #styleB {
   display: flex;
   align-items: center;
   justify-content: center;
   justify-items: center;
 
-}
+  unnecessary repeat of some rules, left here as a reminder
+
+} */
 
 .buttons {
   display: flex;
