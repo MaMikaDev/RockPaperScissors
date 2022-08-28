@@ -60,12 +60,6 @@ h1 {
 
 }
 
-#innerButtons {
-  
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .textBox {
   width: 100%;
   display: flex;

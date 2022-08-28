@@ -5,35 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="script.js"  defer></script>
+    <script src="script.js" defer></script>
     <title>Rock Paper Scissors Game!</title>
   </head>
   <body>
-
     <div class="header">
       <h1>Let's Play!</h1>
-     
     </div>
+
     <main>
-     
+
+      <div class="instructions"><p id="styleB">Choose your hand below:</p></div>
 
       <div class="buttons">
-
-        <div><p id="styleB">Choose your hand below:</p></div>
-
-        <div id="innerButtons">
-        <button id="btn1" onclick="getUserChoice('rock'); game();">Rock!</button>
-        <button id="btn2" onclick="getUserChoice('paper'); game();">Paper!</button>
-        <button id="btn3" onclick="getUserChoice('scissors'); game();">Scissors!</button>
-        </div>
-
+        <button id="btn1" onclick="getUserChoice('rock'); game();">
+          Rock!
+        </button>
+        <button id="btn2" onclick="getUserChoice('paper'); game();">
+          Paper!
+        </button>
+        <button id="btn3" onclick="getUserChoice('scissors'); game();">
+          Scissors!
+        </button>
       </div>
 
       <div class="textBox">
         <p id="demo"></p>
         <p id="demoComp"></p>
         <p id="result"></p>
-     
       </div>
 
       <div id="restart"></div>
@@ -44,13 +43,9 @@
           <p id="computerScore">Computer: 0</p>
         </div>
         <div id="roundScores"><p id="final"></p></div>
-        
-
       </div>
-    
     </main>
-      
+
     <footer id="footer">2022 &copy; Martyna 'The Other MK' Kowalczyk</footer>
-  
   </body>
 </html>
