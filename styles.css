@@ -10,13 +10,29 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   background-color: #8549ba;
   min-height: -webkit-fill-available; /* a fix for the issues with the mobile view */
 }
 
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* padding: 2rem; */
+}
+
+h1 {
+  display: flex;
+  font-size: 4.5em;
+  padding: 0;
+  color: #f0f018;
+}
+
 main {
-  flex: 1;
+  flex: 1;    /*supposed to fill the whole space and push the footer down */
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -26,26 +42,18 @@ main {
   /* box-shadow: 2px 4px 16px #20074233; */
 }
 
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-}
-
-h1 {
-  font-size: 4.5em;
-  padding: 0;
-  color: #f0f018;
-}
 .instructions {
   display: flex;
   align-items: center;
   justify-content: center;
+  justify-items: center;
   font-size: x-large;
   padding-top: 0;
   margin: 0;
+}
+
+#styleB {
+
 }
 
 .buttons {
@@ -108,7 +116,7 @@ p {
   justify-content: center;
 }
 
-#footer {
+.footer {
   font-size: large;
   width: 100%;
   display: flex;
