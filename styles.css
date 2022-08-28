@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap");
 
 html {
   min-height: -webkit-fill-available;
@@ -7,16 +6,14 @@ html {
 
 body {
   min-height: 100vh;
-  font-family: 'Silkscreen', cursive;
+  font-family: "Silkscreen", cursive;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #8549ba;
   min-height: -webkit-fill-available; /* a fix for the issues with the mobile view */
- 
 }
-
 
 main {
   flex: 1;
@@ -27,36 +24,33 @@ main {
   justify-content: center;
 
   /* box-shadow: 2px 4px 16px #20074233; */
-
 }
 
-
-      header {
-
-    display: flex;    
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem;
-    }
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
 
 h1 {
   font-size: 4.5em;
   padding: 0;
   color: #f0f018;
 }
-
-#styleB {
-  font-size:x-large;
+.instructions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: x-large;
   padding-top: 0;
   margin: 0;
 }
 
 .buttons {
-
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .textBox {
@@ -72,18 +66,14 @@ h1 {
   box-shadow: 3px 6px 12px #372a3a;
 }
 
-
 #restart {
-
-display: flex;
-align-items: center;
-justify-content: center;
-
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 button {
-  font-family: 'Silkscreen', cursive;
+  font-family: "Silkscreen", cursive;
   font-size: large;
   margin: 5px;
   padding: 10px 20px;
@@ -94,13 +84,12 @@ p {
   padding: 10px 13px;
   font-size: larger;
   flex-wrap: wrap;
-
 }
 
 .counter {
   font-size: larger;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   align-items: space-around;
   justify-content: center;
   width: 100%;
@@ -110,35 +99,26 @@ p {
   box-shadow: 3px 6px 12px #372a3a;
 }
 
-#scores, 
+#scores,
 #roundScores {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   align-content: center;
   justify-content: center;
-
 }
 
-
-
 #footer {
-
- 
   font-size: large;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-
-
-}
-@media screen and (max-width: 1023px ){
-
-
-button {
-  margin: 2px;
-  padding: 5px 10px;
 }
 
+@media screen and (max-width: 1023px) {
+  button {
+    margin: 2px;
+    padding: 5px 10px;
+  }
 }
