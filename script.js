@@ -155,6 +155,7 @@ function game() {
        else {
 
         document.getElementById('final').innerHTML = 'You lost the game!';
+        gameFinished();
         restBtn.style.visibility = 'visible';
         restartGame();
 
@@ -165,7 +166,7 @@ function game() {
 
 }
 
- function score() {//function adding up the scores
+ function score() {//function adding up the scoresput
 
     if (winner === 'user') {
             userScore++;
