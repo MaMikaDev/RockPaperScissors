@@ -55,8 +55,14 @@ h1 {
 .buttons {
 
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
 
+}
+
+#innerButtons {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .textBox {
