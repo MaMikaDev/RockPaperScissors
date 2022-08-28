@@ -31,14 +31,14 @@ main {
 }
 
 
-.header {
+      header {
 
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: space-between;
-padding: 2rem;
-}
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    }
 
 h1 {
   font-size: 4.5em;
@@ -135,11 +135,6 @@ p {
 }
 @media screen and (max-width: 1023px ){
 
-body {
-
-  height: 90vh;
-
-}
 
 button {
   margin: 2px;
