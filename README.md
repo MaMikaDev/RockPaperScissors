@@ -2,4 +2,4 @@
 
 Simple JavaScript Game.
 
-Live Preview: https://theothermk.github.io/RockPaperScissors/
+Live Preview: <a href="https://mamikadev.github.io/RockPaperScissors/" target=_blank >HERE</a>
